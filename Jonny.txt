@@ -1,5 +1,9 @@
+<<<<<<< HEAD
 Estoy en la branch MASTER
 ESTO ES GENIAL!!!!
+=======
+Este es mi super documento descriptivo. JONATAN ACEVEDO
+>>>>>>> master
 
 Hola soy jonny, estudio ingenieria de sistemas
 
