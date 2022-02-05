@@ -1,6 +1,7 @@
 def repeticiones (num1, num2, eleccion):
     contador = int(input("Seleccione cuantas veces desea repetir la operacion: "))
     operacion = 0
+
     if eleccion == 1:
         eleccion = "Suma"
         for valor in range(contador):
@@ -21,24 +22,25 @@ def repeticiones (num1, num2, eleccion):
             eleccion = "Suma y division"
             for valor in range(contador):
                 operacion += sumDiv(num1, num2)
-        elif eleccion == 6:
+    elif eleccion == 6:
             eleccion = "Resta y multiplicacion"
             for valor in range(contador):
                 operacion += resMul(num1, num2)
     else:
             print("numero incorrecto")
+
     print ("Este es el resultado de la suma de la cantidad de veces que se repitio la", eleccion)
     print (operacion)
 
 
 def resMul(num1, num2):
     resMul = (num1-num2) * num1
-    print("Su resta es: ", resMul)
+    return resMul
 
 
 def sumDiv(num1, num2):
     sumDiv = (num1 + num2) / num1
-    print("Su resta es: ", sumDiv)
+    return sumDiv
 
 
 def resta(num1, num2):
