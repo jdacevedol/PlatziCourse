@@ -17,10 +17,29 @@ def repeticiones (num1, num2, eleccion):
         eleccion = "Multiplicacion"
         for valor in range(contador):
             operacion += multiplicacion(num1, num2)
+    elif eleccion == 5:
+            eleccion = "Suma y division"
+            for valor in range(contador):
+                operacion += sumDiv(num1, num2)
+        elif eleccion == 6:
+            eleccion = "Resta y multiplicacion"
+            for valor in range(contador):
+                operacion += resMul(num1, num2)
     else:
             print("numero incorrecto")
     print ("Este es el resultado de la suma de la cantidad de veces que se repitio la", eleccion)
     print (operacion)
+
+
+def resMul(num1, num2):
+    resMul = (num1-num2) * num1
+    print("Su resta es: ", resMul)
+
+
+def sumDiv(num1, num2):
+    sumDiv = (num1 + num2) / num1
+    print("Su resta es: ", sumDiv)
+
 
 def resta(num1, num2):
     res = num1 - num2
@@ -53,6 +72,8 @@ if __name__ == '__main__':
             2. Resta
             3. Division
             4. Multiplicacion
+            5. Summar y dividir el resultado
+            6. Restar y multiplicar el resultado
         """
         eleccion = int(input(mensaje))
         repeticiones(num1, num2, eleccion)
