@@ -1,3 +1,13 @@
+def resMul(num1, num2):
+    resMul = (num1-num2) * num1
+    print("Su resta es: ", resMul)
+
+
+def sumDiv(num1, num2):
+    sumDiv = (num1 + num2) / num1
+    print("Su resta es: ", sumDiv)
+
+
 def resta(num1, num2):
     res = num1 - num2
     print("Su resta es: ", res)
@@ -29,6 +39,8 @@ if __name__ == '__main__':
             2. Resta
             3. Division
             4. Multiplicacion
+            5. Summar y dividir el resultado
+            6. Restar y multiplicar el resultado
         """
         eleccion = int(input(mensaje))
         if eleccion == 1:
@@ -39,6 +51,10 @@ if __name__ == '__main__':
             division(num1, num2)
         elif eleccion == 4:
             multiplicacion(num1, num2)
+        elif eleccion == 5:
+            sumDiv(num1, num2)
+        elif eleccion == 6:
+            resMul(num1, num2)
         else:
             print("numero incorrecto")
         respuesta = input("Desea continuar? ")
