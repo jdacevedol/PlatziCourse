@@ -23,7 +23,8 @@ if __name__ == '__main__':
     num2 = int(input("Ingrese un numero 2: "))
     respuesta = "Si"
     while(respuesta == "Si" or respuesta == "si"):
-        mensaje ="""Escoja la opcion de la operacion que desea realizar:
+        mensaje =""" BIENVENIDOS A LA NUEVA VERSION CON SSH
+            Escoja la opcion de la operacion que desea realizar:
             1. Suma
             2. Resta
             3. Division
