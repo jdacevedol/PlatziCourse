@@ -1,21 +1,45 @@
+def repeticiones (num1, num2, eleccion):
+    contador = int(input("Seleccione cuantas veces desea repetir la operacion: "))
+    operacion = 0
+    if eleccion == 1:
+        eleccion = "Suma"
+        for valor in range(contador):
+            operacion += suma(num1, num2)
+    elif eleccion == 2:
+        eleccion = "Resta"
+        for valor in range(contador):
+            operacion += resta(num1, num2)
+    elif eleccion == 3:
+        eleccion = "Division"
+        for valor in range(contador):
+            operacion += division(num1, num2)
+    elif eleccion == 4:
+        eleccion = "Multiplicacion"
+        for valor in range(contador):
+            operacion += multiplicacion(num1, num2)
+    else:
+            print("numero incorrecto")
+    print ("Este es el resultado de la suma de la cantidad de veces que se repitio la", eleccion)
+    print (operacion)
+
 def resta(num1, num2):
     res = num1 - num2
-    print("Su resta es: ", res)
+    return res
 
 
 def division(num1, num2):
-    div = num1 * num2
-    print("Su division es: ", div)
+    div = num1 / num2
+    return div
 
 
 def multiplicacion(num1, num2):
     mul = num1 * num2
-    print("Su multiplicacion es: ",  mul)
+    return mul
 
 
 def suma(num1, num2):
     suma = num1 + num2
-    print("Su suma es: ", suma)
+    return suma
 
 
 if __name__ == '__main__':
@@ -31,15 +55,7 @@ if __name__ == '__main__':
             4. Multiplicacion
         """
         eleccion = int(input(mensaje))
-        if eleccion == 1:
-            suma(num1, num2)
-        elif eleccion == 2:
-            resta(num1, num2)
-        elif eleccion == 3:
-            division(num1, num2)
-        elif eleccion == 4:
-            multiplicacion(num1, num2)
-        else:
-            print("numero incorrecto")
+        repeticiones(num1, num2, eleccion)
+
         respuesta = input("Desea continuar? ")
     
